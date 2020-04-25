@@ -33,10 +33,6 @@ class CreateTransactionService {
       category,
     });
 
-    delete transaction.created_at;
-    delete transaction.updated_at;
-    delete transaction.category_id;
-
     return transaction;
   }
 }
